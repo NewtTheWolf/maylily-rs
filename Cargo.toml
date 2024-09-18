@@ -1,0 +1,13 @@
+[package]
+name = "maylily"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+chrono = "0.4.38"
+num-bigint = "0.4.6"
+tokio = {version = "1.40.0", features = ["time", "sync"], default-features = false}
+tracing = "0.1.40"
+
+[dev-dependencies]
+tokio = {version = "1.40.0", features = ["rt", "rt-multi-thread"], default-features = false}
